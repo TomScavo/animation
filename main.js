@@ -5,24 +5,6 @@ const randomID = document.querySelector('.random-id');
 const textImgs = document.querySelector('#lastTextImg');
 const lastImg = document.querySelector('#lastImg');
 
-var test = '';
-
-var QUOTA_EXCEEDED_ERR = 22;
-for (var i = 0; i < 200000; i++) {
-  test += 'sdfghyxcvbn123kjhajsdfkhuwehfkjs,dnfhkweufhkjsdf';
-}
-try {
-  var result = window.localStorage.setItem('test', test);
-} catch (e) {
-  console.log(e);
-  for (let i in e) {
-    console.log(i, e[i]);
-  }
-  if (e == QUOTA_EXCEEDED_ERR) {
-    alert('Quota exceeded!'); //data wasn't successfully saved due to quota exceed so throw an error
-  }
-}
-
 randomID.innerHTML = `<span>${Math.floor(Math.random() * 50) + 1001}</span>`;
 console.log(textImgs);
 textImgs.src = `./img/text/${Math.floor(Math.random() * 13) + 1}.png`;
