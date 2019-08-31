@@ -17,14 +17,8 @@ lastImg.src = `./img/p5-bg${randomImgIndex}.png`;
 
 let w = window,
   d = document,
-  e = d.documentElement,
   g = d.getElementsByTagName('body')[0],
-  height = Math.max(
-    window.screen.height,
-    w.innerHeight,
-    e.clientHeight,
-    g.clientHeight
-  );
+  height = Math.max(window.screen.height, w.innerHeight, g.clientHeight);
 
 let bodyHeight = `${height}px`;
 const body = document.querySelector('body');
