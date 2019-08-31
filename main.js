@@ -6,7 +6,6 @@ const textImgs = document.querySelector('#lastTextImg');
 const lastImg = document.querySelector('#lastImg');
 
 randomID.innerHTML = `<span>${Math.floor(Math.random() * 50) + 1001}</span>`;
-console.log(textImgs);
 textImgs.src = `./img/text/${Math.floor(Math.random() * 13) + 1}.png`;
 const randomImgIndex = (function() {
   if (Math.random() > 0.5) {
