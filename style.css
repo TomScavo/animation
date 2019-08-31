@@ -16,10 +16,10 @@ header > img {
 .body-wrap {
   height: 100%;
 }
-@font-face {
+/* @font-face {
   font-family: aura;
   src: url('./aura.woff');
-}
+} */
 li {
   list-style: none;
 }
